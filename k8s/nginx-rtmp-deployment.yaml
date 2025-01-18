@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-rtmp-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx-rtmp
+  template:
+    metadata:
+      labels:
+        app: nginx-rtmp
+    spec:
+      containers:
+        - name: nginx-rtmp
+          image: 697593013958.dkr.ecr.ap-south-1.amazonaws.com/nginx-rtmp-server:latest
+          ports:
+            - containerPort: 1935
+            - containerPort: 8080
