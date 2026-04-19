@@ -1,4 +1,11 @@
 # Live Stream with Kubernetes
+
+**Hook:** Live streaming infrastructure requires manual K8s configuration.
+
+**Body:** Kubernetes configuration for live streaming workloads.
+
+**Closer:** Production-ready K8s streaming infrastructure.
+
 This repository provides a complete setup for running a live streaming server on Kubernetes using NGINX with RTMP module. With this setup, you can easily stream videos using FFmpeg and serve them over HLS (HTTP Live Streaming). The guide includes Kubernetes deployment files, NGINX configuration, and Docker setup to help you get started quickly. Follow the steps below to deploy your own live-streaming server and start broadcasting in no time! 🚀
 
 
